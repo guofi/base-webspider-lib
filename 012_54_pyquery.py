@@ -1,9 +1,11 @@
 from pyquery import PyQuery as pq
 
+
 def fun(html):
     doc = pq(html)
     print(doc('#container .list li'))
     print(type(doc('#container .list li')))
+
 
 if __name__ == '__main__':
     html = '''
@@ -20,4 +22,3 @@ if __name__ == '__main__':
     
     '''
     fun(html)
-
